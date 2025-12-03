@@ -4,7 +4,6 @@ class ByteDemo{
 			byte b2=127;
 			
 			//byte b3= 128;//compile error: incompatible types: possible lossy conversion from int to byte
-			
 			byte b4=-128;
 			
 			//byte b5= -129;//compile error: incompatible types: possible lossy conversion from int to byte
@@ -23,5 +22,15 @@ class ByteDemo{
 			byte b10 = '*';
 			byte a1 = '9';
 			System.out.println("b10: " + b10 + " a1: " +a1 );//b10: 42 a1: 57 i,e it will give ASIC code VAlue
+			
+			//byte bd =  null; //compile error: incompatible types: <null> cannot be converted to byte
+			
+			byte [] bytenum = {10,20,30};//works
+			//byte [] bytenum = {10,20,30,150};//compile error: incompatible types: possible lossy conversion from int to byte
+			System.out.println(bytenum[2]);
+			for(int i=0; i< bytenum.length; i++){
+			System.out.println(bytenum[i]  );
+			}
+			
 		}
 }
