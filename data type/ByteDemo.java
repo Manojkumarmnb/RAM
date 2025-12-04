@@ -1,3 +1,8 @@
+/*usage:
+- byte is best when handiling raw binary data
+	1. file operation(read/erite bytes)
+	2.network data transfer(streams) */
+
 class ByteDemo{
 		public static void main(String [] args){
 			byte b1=1;
